@@ -1,0 +1,38 @@
+:root {
+  --color-ink: #121212;
+  --color-paper: #f3f2ee;
+  --color-muted: #55534e;
+  --color-line: #d6d3cc;
+  --color-accent: #e8481c;
+
+  --space-page: 40px;
+  --max-width: 1360px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  color: var(--color-ink);
+  background: var(--color-paper);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

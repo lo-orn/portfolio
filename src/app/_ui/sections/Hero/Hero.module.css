@@ -1,0 +1,36 @@
+.hero {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 120px var(--space-page);
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  margin: 0;
+  font-weight: 500;
+  font-size: clamp(64px, 9vw, 152px);
+  line-height: 0.92;
+  letter-spacing: -0.045em;
+}
+
+.accent {
+  font-family: var(--font-serif), serif;
+  font-weight: 400;
+  color: var(--color-accent);
+}
+
+.figure {
+  width: 220px;
+  margin: 0;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+.caption {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--color-muted);
+}
