@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Instrument_Sans, Instrument_Serif } from 'next/font/google';
-import Header from '@/app/_ui/layout/Header/Header';
+import Header from '@/ui/layout/Header/Header';
 import './globals.css';
 
 const sans = Instrument_Sans({

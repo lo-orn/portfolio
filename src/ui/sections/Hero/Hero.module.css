@@ -6,6 +6,18 @@
   justify-content: space-between;
 }
 
+.heroCopy{
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  max-width: 34ch;
+  margin: 40px 0 0;
+  font-size: 20px;
+  line-height: 1.45;
+}
+
 .title {
   margin: 0;
   font-weight: 500;
@@ -21,7 +33,8 @@
 }
 
 .figure {
-  width: 220px;
+  width: 320px;
+  flex-shrink: 0;
   margin: 0;
 }
 
