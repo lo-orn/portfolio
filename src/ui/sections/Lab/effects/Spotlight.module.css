@@ -1,0 +1,32 @@
+.stage {
+  position: absolute;
+  inset: 0;
+  cursor: none;
+}
+
+.hint {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  font-size: clamp(32px, 5vw, 72px);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  opacity: 0.3;
+}
+
+.reveal {
+  position: absolute;
+  inset: 0;
+  mask-image: radial-gradient(
+    circle 160px at var(--x, 50%) var(--y, 50%),
+    #000 0,
+    #000 55%,
+    transparent 100%
+  );
+}
+
+.image {
+  object-fit: cover;
+}

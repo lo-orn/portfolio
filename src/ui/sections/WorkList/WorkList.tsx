@@ -4,40 +4,7 @@ import Link from 'next/link';
 import styles from './WorkList.module.css';
 import { useState } from 'react';
 import Image from 'next/image';
-
-type SelectedWork = {
-  slug: string;
-  client: string;
-  role: string;
-  img: string;
-  alt: string;
-  focus?: string;
-};
-
-const works: SelectedWork[] = [
-  {
-    slug: 'sns',
-    client: 'Sneakersnstuff',
-    role: 'Idea, concept, art direction, casting',
-    img: '/images/nike-pre-day-03.png',
-    alt: 'Nike Air Max campaign poster for Sneakersnstuff',
-    focus: 'center top',
-  },
-  {
-    slug: 'urbanears',
-    client: 'Urbanears',
-    role: 'Art direction, creative management',
-    img: '/images/urbanears-juno-04.png',
-    alt: 'Open Urbanears Juno charging case with earbuds, lit against a black background',
-  },
-  {
-    slug: 'marshall',
-    client: 'Marshall',
-    role: 'Art direction',
-    img: '/images/marshall-heston-pdp-05.avif',
-    alt: 'People dancing in a living room with a Marshall Heston speaker under the TV',
-  },
-];
+import { works } from '@/shared/content/works';
 
 export default function WorkList() {
   const [active, setActive] = useState(0);

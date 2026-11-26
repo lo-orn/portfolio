@@ -27,8 +27,7 @@
 }
 
 .accent {
-  font-family: var(--font-serif), serif;
-  font-weight: 400;
+  font-style: normal;
   color: var(--color-accent);
 }
 

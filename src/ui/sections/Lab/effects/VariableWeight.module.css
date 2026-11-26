@@ -1,0 +1,23 @@
+.stage {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 16px;
+  cursor: ew-resize;
+}
+
+.word {
+  margin: 0;
+  font-size: clamp(64px, 13vw, 200px);
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+
+.readout {
+  margin: 0;
+  font-size: 15px;
+  opacity: 0.6;
+  font-variant-numeric: tabular-nums;
+}

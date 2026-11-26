@@ -12,7 +12,7 @@ export default function Header() {
         <ul className={styles.list}>
           {links.map((link) => (
             <li key={link}>
-              <a className={styles.link} href={`#${link}`}>
+              <a className={styles.link} href={`/#${link}`}>
                 {link}
               </a>
             </li>

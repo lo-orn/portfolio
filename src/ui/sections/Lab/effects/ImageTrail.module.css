@@ -1,0 +1,46 @@
+.stage {
+  position: absolute;
+  inset: 0;
+  cursor: crosshair;
+}
+
+.hint {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  font-size: clamp(32px, 5vw, 72px);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.image {
+  position: absolute;
+  width: 160px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  pointer-events: none;
+  animation: trail 1s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+
+@keyframes trail {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+  15% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -40%) scale(0.95);
+  }
+}

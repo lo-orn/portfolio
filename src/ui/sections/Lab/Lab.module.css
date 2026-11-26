@@ -1,0 +1,68 @@
+.lab {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-page) 120px;
+}
+
+.heading {
+  margin: 0 0 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-ink);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.box {
+  position: relative;
+  height: clamp(360px, 50vw, 600px);
+  overflow: hidden;
+  border-radius: 4px;
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin: 0;
+  font-size: 15px;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.description {
+  color: var(--color-muted);
+}
+
+.shuffle {
+  min-height: 44px;
+  padding: 0 20px;
+  border: 1px solid var(--color-ink);
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.shuffle:hover,
+.shuffle:focus-visible {
+  background: var(--color-ink);
+  color: var(--color-paper);
+}

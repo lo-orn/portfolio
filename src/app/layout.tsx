@@ -1,18 +1,11 @@
 import type { Metadata } from 'next';
-import { Instrument_Sans, Instrument_Serif } from 'next/font/google';
+import { Instrument_Sans } from 'next/font/google';
 import Header from '@/ui/layout/Header/Header';
 import './globals.css';
 
 const sans = Instrument_Sans({
   subsets: ['latin'],
   variable: '--font-sans',
-});
-
-const serif = Instrument_Serif({
-  subsets: ['latin'],
-  weight: '400',
-  style: ['normal', 'italic'],
-  variable: '--font-serif',
 });
 
 export const metadata: Metadata = {
@@ -26,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${sans.variable} ${serif.variable}`}>
+    <html lang="en" className={sans.variable}>
       <body>
         <Header />
         {children}
